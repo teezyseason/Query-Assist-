@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Assist </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header"> 
+        <a href="#">  <p class="logo"> Q A </p> </a>
+        <h1> Query Assist</h1>
+        <button id= "instructions" title="Open Instructions"> Get Started</button>
+    </header>
+
+    <!-- Main Content -->
+
+    <div class="container">
+
+        <div class="instructions-modal">
+            <button id = 'instructionsCloseBtn' title="Close Instructions"> X </button>
+            <div class="instructionsModal-content">
+            <h4> Welcome To Query Assist </h4>
+            <p class="">
+                Query Assist is an easy to use and user 
+                friendly web-bassed application which helps Web Developers 
+                tackle the frustration that comes with making your website and or web 
+                application responsive to different screen sizes. Our application will reduce 
+                the the time spent on trying to figure out the "perfect" media queries by providing 
+                you with the best custom queries that will best suite your website.
+            </p>
+
+            <ul>
+               
+            </ul>
+           </div>
+           
+        </div>
+
+        <div class="components-conatainer">
+
+            <div class="components">
+                <div class="component">
+                    <textarea name="html" id="html-code" placeholder="Paste Your CSS Code Here" class="textAreaInput"></textarea>
+                </div>
+    
+                    <div class="component">
+                        <textarea name="css" id="css-code" placeholder="Paste Your HTML Code Here" class="textAreaInput"></textarea>
+                    </div>
+                </div>
+
+                <div class="custom-input">
+                    <label for="breakpoints">Custom Breakpoints:</label>
+                    <input type="text" id="breakpoints" placeholder="e.g., 576, 768, 992, 1200">
+                </div>
+
+                <div class="bottom-conatiner">
+                    <div class="info-container">
+                        <p class="info-text" id="info-text"> </p>
+                    </div>
+
+                    <div class="button-container">
+                        <button id="generate-button"> Generate </button>
+                    </div>
+
+                    <div id="error-message" style="color: red; display: none;"></div>
+        
+                </div>
+            </div>
+        </div>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Generated Media Queries</h2>
+                <pre id="generated-queries"></pre>
+            </div>
+        </div>
+           
+        </div>
+       
+    </div>
+
+    <!-- Footer -->
+
+    <div class="footer">
+        <p> Sample Footer</p>
+    </div>
+  
+    
+    <script src="https://unpkg.com/postcss@8.4.14/dist/postcss.min.js"></script>
+    <script src="https://unpkg.com/postcss-js@3.0.3/dist/postcss-js.min.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>

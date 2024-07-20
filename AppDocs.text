@@ -1,0 +1,8 @@
+This is where I will be putting the documentation of my application 
+
+Query Assist is an easy to use and user friendly web-bassed application which helps Web Developers 
+tackle the frustration that comes with making your website and or web application responsive to different screen sizes. Our application will reduce 
+the the time spent on trying to figure out the "perfect" media queries by providing you with the best custom queries that will best suite your website/application.
+
+I have created two text areas that will both be recieving different
+types of inputs from the user (HTML/CSS).  
